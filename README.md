@@ -6,4 +6,5 @@ Course Descp: This course covers the principles and methodologies of database de
  The topics covered include relational algebra, SQL queries, normalization, entity-relationship model, SQL/Host-language interface, stored procedure, object-oriented databases, and semi- structured databases.
 
 More ... 
-My team members will add adition info here.
+
+My team members will add aditional info here.
