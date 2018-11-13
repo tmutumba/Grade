@@ -1,0 +1,47 @@
+<%= form_with(model: assessment, local: true) do |form| %>
+  <% if assessment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(assessment.errors.count, "error") %> prohibited this assessment from being saved:</h2>
+
+      <ul>
+      <% assessment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :AsstType %>
+    <%= form.text_field :AsstType %>
+  </div>
+
+  <div class="field">
+    <%= form.label :actual_Score %>
+    <%= form.text_field :actual_Score %>
+  </div>
+
+  <div class="field">
+    <%= form.label :expected_Score %>
+    <%= form.text_field :expected_Score %>
+  </div>
+
+  <div class="field">
+    <%= form.label :course_id %>
+    <%= form.text_field :course_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :section_id %>
+    <%= form.text_field :section_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :student_id %>
+    <%= form.text_field :student_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

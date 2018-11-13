@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Assttype:</strong>
+  <%= @assessment.AsstType %>
+</p>
+
+<p>
+  <strong>Actual score:</strong>
+  <%= @assessment.actual_Score %>
+</p>
+
+<p>
+  <strong>Expected score:</strong>
+  <%= @assessment.expected_Score %>
+</p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @assessment.course %>
+</p>
+
+<p>
+  <strong>Section:</strong>
+  <%= @assessment.section %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @assessment.student %>
+</p>
+
+<%= link_to 'Edit', edit_assessment_path(@assessment) %> |
+<%= link_to 'Back', assessments_path %>
