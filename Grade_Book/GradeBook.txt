@@ -1,8 +1,0 @@
-
-rails new Grade_Book
-rails g scaffold Course name:string number:string dept:string crHr:integer
-rails g scaffold Section semester:string number:integer room:string course:references
-rails g scaffold Student fname:string lname:string St_Id:integer
-rails g scaffold Assessment AsstType:string actual_Score:decimal expected_Score:decimal course:references section:references student:references 
-rails g model AssessmentsCoursesStudents assessment:references courses:references student:references
-rake db:migrate
